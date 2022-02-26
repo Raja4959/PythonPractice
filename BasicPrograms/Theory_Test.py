@@ -1,22 +1,26 @@
-# def print_string(String):
-#     print(String)
-#     l = String.split()
-#     for a in l:
-#         print(a)
-#     for a in String:
-#         print(a, end=" ")
-#     print()
-#     for a in String:
-#         print(a,'-',ord(a))
+def single_digit(n):
+    if n<10:
+        return n
+    else:
+        total =0
+        number = n
+        while number > 0:
+            d = number %10
+            total = total + d
+            number = number //10
+        return single_digit(total)
+        
+reg = "AP39MG8127"
+num = 116391378127
+print("coding numbers",single_digit(num))
 
+total = 0
+unit_sum = 0
+for char in reg:
+    total = total + ord(char)
+    unit_sum += single_digit(total)
 
-# print_string("Hello.... World....!%@")
-# print(chr(40))
-
-from pathlib import Path
-print("File Name = ",__file__)
-Dir = Path(__file__).resolve().parent
-print("Parent Directory = ", Dir)
-
-file_path = Path.joinpath(Dir,__file__)
-print("File path = ",file_path)
+print("sum ",single_digit(total))
+print("unit_sum ",single_digit(unit_sum))
+        
+        
