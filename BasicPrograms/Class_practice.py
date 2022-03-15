@@ -1,10 +1,7 @@
-# a=["raja","naresh","chandu","raja","chandu"]
-# unique = [i for i in a if a.count(i)==1]
-# print(unique)
+a=["raja","naresh","chandu","raja","chandu"]
+unique = [i for i in a if a.count(i)==1]
+print(unique)
 
-from tracemalloc import start
-
-from numpy import roll
 
 
 class College():
