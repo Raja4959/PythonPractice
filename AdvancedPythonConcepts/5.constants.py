@@ -5,6 +5,13 @@ def constant(f):
         return f()
     return property(fget,fset)
 
+# def constant(f):
+#     def vset(self,value):
+#         raise TypeError("Assigning Value To a Constant")
+#     def vget(self):
+#         return f()
+#     return property(vget,vset)
+
 class Constant:
     @constant
     def PI():
