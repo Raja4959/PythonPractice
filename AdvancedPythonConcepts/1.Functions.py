@@ -17,3 +17,7 @@ def method_param(a):
     print(a , "is a parameter")
 
 method_param("Weed")
+
+
+div = lambda a,b: a//b
+print(div(10,5))
