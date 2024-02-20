@@ -1,3 +1,14 @@
+# the product of all positive integers less than or equal to a given non-negative integer
+# The factorial function is defined as follows:
+# n!=n×(n−1)×(n−2)×…×3×2×1
+# By convention, 0!=1, which serves as the base case for the recursion.
+
+# For example:
+# 5!=5×4×3×2×1=120
+# 4!=4×3×2×1=24
+# 1!=1
+# 0!=1 (by convention)
+
 # 1. Calculate the factorial of a number
 def factorial(n):
     if n == 0 or n == 1:

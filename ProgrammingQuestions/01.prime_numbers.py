@@ -1,3 +1,9 @@
+# a prime number is a positive integer greater than 1 that has no positive divisors other than 1 and itself.
+    # eg:
+        # 2 (the only even prime number)
+        # 3, 5, 7, 11, 13, 17, 19
+
+
 # 1.Given number is prime number or not
 def is_primenumber(num: int):
     if num < 2:

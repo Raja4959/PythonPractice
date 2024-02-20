@@ -1,3 +1,12 @@
+# The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones,
+# usually starting with 0 and 1. The sequence begins:
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ...
+# In mathematical terms, the Fibonacci sequence F(n) is defined by the recurrence relation:
+# F(n)=F(n−1)+F(n−2)
+# with initial conditions:
+# F(0)=0,F(1)=1
+
+
 # 1. Generate the Fibonacci sequence up to a specified term:
 def generate_fibonacci(n):
     fib_sequence = [0, 1]
@@ -45,3 +54,4 @@ if is_fibonacci(number_to_check):
     print(f"{number_to_check} is a Fibonacci number.")
 else:
     print(f"{number_to_check} is not a Fibonacci number.")
+

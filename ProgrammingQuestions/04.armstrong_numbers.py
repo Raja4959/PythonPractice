@@ -1,3 +1,17 @@
+# an n-digit number is considered an Armstrong number if the sum of its digits, each raised to the nth power, is equal to the number itself.
+
+# To determine if 5421 is an Armstrong number, we need to calculate the sum of each digit raised to the power of the number of digits 
+# (which is 4 in this case since 5421 has four digits).
+# Let's perform the calculation:
+# 5**4+4**4+2**4+1**4=625+256+16+1=898
+# Since the sum is not equal to 5421, we can conclude that 5421 is not an Armstrong number.
+
+# For example, let's take the number 153:
+# The number of digits is 3.
+# 1**3+5**3+3**3=1+125+27=153
+# Since the sum is 153, we can conclude that 153 is an Armstrong number.
+
+
 # 1. Check if a number is an Armstrong number:
 def is_armstrong_number(num):
     order = len(str(num))
